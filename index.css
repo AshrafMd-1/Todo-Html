@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Caveat&family=Fredoka+One&family=Pacifico&family=Rampart+One&display=swap');
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: aliceblue;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-family: 'Rampart One', cursive;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #7c2cc8;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 2rem;
+    font-weight: 400;
+    color: #cb96f3;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+.input {
+    width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0 13px 27px -5px, rgba(0, 0, 0, 0.3) 0 8px 16px -8px;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+}
+
+.todo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 0;
+}
+
+.date {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 0;
+}
+
+.add {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 0;
+}
+
+
+input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    font-family: 'Caveat', cursive;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1e1eff;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: rgba(60, 64, 67, 0.3) 0 1px 2px 0, rgba(60, 64, 67, 0.15) 0 1px 3px 1px;
+
+}
+
+label {
+    font-family: 'Pacifico', cursive;
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #7c2cc8;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+.add button {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    font-family: 'Alfa Slab One', cursive;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    font-weight: 200;
+    color: #ff3c79;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #e2c7fa;
+    border: none;
+    cursor: pointer;
+}
+
+.add button:hover {
+    background-color: #ff3c79;
+    color: #e2c7fa;
+    transition: color 0.5s ease-in-out, background-color 0.5s ease-in-out;
+}
+
+.todo input:focus {
+    border: 2px solid #7c2cc8;
+    box-shadow: rgba(60, 64, 67, 0.3) 0 1px 2px 0, rgba(60, 64, 67, 0.15) 0 1px 3px 1px;
+}
+
+.date input:focus {
+    border: 2px solid #7c2cc8;
+    box-shadow: rgba(60, 64, 67, 0.3) 0 1px 2px 0, rgba(60, 64, 67, 0.15) 0 1px 3px 1px;
+}
+
+.tasks {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 0;
+}
+
+.overdue {
+    width: 75vh;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    margin: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0 2px 8px;
+    background-color: #ffdfe6;
+}
+
+.today {
+    width: 75vh;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    margin: 10px;
+    background-color: #f8f3d5;
+    box-shadow: rgba(0, 0, 0, 0.15) 0 2px 8px;
+}
+
+.upcoming {
+    width: 75vh;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    margin: 10px;
+    background-color: #e5ffe4;
+    box-shadow: rgba(0, 0, 0, 0.15) 0 2px 8px;
+}
+
+
+li {
+    list-style: decimal;
+    padding: 2px;
+    word-wrap: anywhere;
+}
+
+.delete {
+    margin-left: 0.5rem;
+    background-color: #ff3c79;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-family: "Permanent Marker", cursive;
+    font-weight: 700;
+}
