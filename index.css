@@ -3,7 +3,9 @@
 body {
     width: 100vw;
     height: 100vh;
-    background: aliceblue;
+    margin:2px;
+    padding: 2px;
+    background: mintcream;
     overflow-x: hidden;
 }
 
@@ -32,12 +34,12 @@ h2 {
     width: 50vw;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 2rem;
+    margin-top: 1rem;
     padding: 1rem 2rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-shadow: rgba(50, 50, 93, 0.25) 0 13px 27px -5px, rgba(0, 0, 0, 0.3) 0 8px 16px -8px;
+    box-shadow: rgba(6, 24, 44, 0.4) 0 0 0 2px, rgba(6, 24, 44, 0.65) 0 4px 6px -1px, rgba(255, 255, 255, 0.08) 0 1px 0;
     border-radius: 10px;
     background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
 }
@@ -81,7 +83,7 @@ input {
     font-size: 1.5rem;
     font-weight: 700;
     color: #1e1eff;
-    border-radius: 5px;
+    border-radius: 10px;
     text-align: center;
     box-shadow: rgba(60, 64, 67, 0.3) 0 1px 2px 0, rgba(60, 64, 67, 0.15) 0 1px 3px 1px;
 
@@ -108,7 +110,7 @@ label {
     font-size: 1.7rem;
     font-weight: 200;
     color: #ff3c79;
-    border-radius: 5px;
+    border-radius: 10px;
     text-align: center;
     background-color: #e2c7fa;
     border: none;
@@ -150,6 +152,7 @@ label {
     align-items: center;
     padding: 1em;
     margin: 10px;
+    border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.15) 0 2px 8px;
     background-color: #ffdfe6;
 }
@@ -158,6 +161,7 @@ label {
     width: 75vh;
     height: fit-content;
     display: flex;
+    border-radius: 10px;
     justify-content: center;
     align-items: center;
     padding: 1em;
@@ -170,6 +174,7 @@ label {
     width: 75vh;
     height: fit-content;
     display: flex;
+    border-radius: 10px;
     justify-content: center;
     align-items: center;
     padding: 1em;
