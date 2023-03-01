@@ -188,6 +188,7 @@ li {
     list-style: decimal;
     padding: 2px;
     word-wrap: anywhere;
+
 }
 
 .delete {
@@ -195,7 +196,32 @@ li {
     background-color: #ff3c79;
     color: #ffffff;
     border: none;
+    border-radius: 10px;
+    font-family: "Permanent Marker", cursive;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor:pointer;
+}
+.completed {
+    margin-left: 0.5rem;
+    background-color: #ffa600;
+    color: #ffffff;
+    border: none;
+    font-size: 1rem;
     border-radius: 5px;
     font-family: "Permanent Marker", cursive;
     font-weight: 700;
+    cursor:pointer;
 }
+.not-completed {
+    margin-left: 0.5rem;
+    background-color: #13d548;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: "Permanent Marker", cursive;
+    font-weight: 700;
+    cursor:pointer;
+}
+

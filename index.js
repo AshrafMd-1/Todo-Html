@@ -44,12 +44,20 @@ const render = () => {
     const listCreate = (list, parent) => {
         list.forEach(item => {
             const li = document.createElement('li');
-            li.innerHTML = `${item.todo} - ${dayRem(item.date)} ${item.completed ? '[x]' : '[ ]'}`
+            li.innerHTML = `${item.todo} - ${dayRem(item.date)}`
             li.style.textDecoration = item.completed ? 'line-through' : 'none';
+            const completedBtn = document.createElement('button');
+            if(item.completed) {
+                completedBtn.innerHTML = '!';
+                completedBtn.className = 'completed';
+            }else{
+                completedBtn.innerHTML = '✓';
+                completedBtn.className = 'not-completed';
+            }
             const deleteBtn = document.createElement('button');
             deleteBtn.innerHTML = 'X';
             deleteBtn.className = 'delete';
-            li.addEventListener('click', () => {
+            completedBtn.addEventListener('click', () => {
                 const index = items.findIndex(i => i.id === item.id);
                 items[index].completed = !items[index].completed;
                 localStorage.setItem('items', JSON.stringify(items));
@@ -61,6 +69,7 @@ const render = () => {
                 localStorage.setItem('items', JSON.stringify(items));
                 render();
             });
+            li.appendChild(completedBtn);
             li.appendChild(deleteBtn);
             parent.appendChild(li);
         })
