@@ -3,7 +3,7 @@
 body {
     width: 100vw;
     height: 100vh;
-    margin:2px;
+    margin: 2px;
     padding: 2px;
     background: mintcream;
     overflow-x: hidden;
@@ -200,8 +200,9 @@ li {
     font-family: "Permanent Marker", cursive;
     font-weight: 700;
     font-size: 1rem;
-    cursor:pointer;
+    cursor: pointer;
 }
+
 .completed {
     margin-left: 0.5rem;
     background-color: #ffa600;
@@ -211,8 +212,9 @@ li {
     border-radius: 5px;
     font-family: "Permanent Marker", cursive;
     font-weight: 700;
-    cursor:pointer;
+    cursor: pointer;
 }
+
 .not-completed {
     margin-left: 0.5rem;
     background-color: #13d548;
@@ -222,6 +224,6 @@ li {
     font-size: 1rem;
     font-family: "Permanent Marker", cursive;
     font-weight: 700;
-    cursor:pointer;
+    cursor: pointer;
 }
 

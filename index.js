@@ -8,9 +8,16 @@ const upcomingEl = document.getElementById('upcoming');
 
 let items = [];
 
+function capitalizeLetter(string) {
+    const words = string.split(' ');
+    const capitalizedWords = words.map(word => {
+        return word.charAt(0).toUpperCase() + word.slice(1);
+    });
+    return capitalizedWords.join(' ');
+}
 
 addEl.addEventListener('click', () => {
-    const todo = todoEl.value;
+    const todo = capitalizeLetter(todoEl.value);
     const date = dateEl.value;
     const id = items.length + 1;
     const completed = false;
@@ -36,7 +43,7 @@ const dayRem = (date) => {
     } else if (days >= 1) {
         return `${days} days left`
     } else {
-        return `Already overdue`
+        return `Already Overdue`
     }
 }
 
@@ -47,10 +54,10 @@ const render = () => {
             li.innerHTML = `${item.todo} - ${dayRem(item.date)}`
             li.style.textDecoration = item.completed ? 'line-through' : 'none';
             const completedBtn = document.createElement('button');
-            if(item.completed) {
+            if (item.completed) {
                 completedBtn.innerHTML = '!';
                 completedBtn.className = 'completed';
-            }else{
+            } else {
                 completedBtn.innerHTML = '✓';
                 completedBtn.className = 'not-completed';
             }
