@@ -17,6 +17,7 @@ function capitalizeLetter(string) {
 }
 
 addEl.addEventListener('click', () => {
+    if(!todoEl.value || !dateEl.value) return;
     const todo = capitalizeLetter(todoEl.value);
     const date = dateEl.value;
     const id = items.length + 1;
